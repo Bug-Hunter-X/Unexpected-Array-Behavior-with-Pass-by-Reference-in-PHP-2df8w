@@ -1,0 +1,3 @@
+# PHP Array Pass by Reference Bug
+
+This repository demonstrates a subtle bug related to pass-by-reference behavior in PHP when working with arrays.  The `increment_array_value` function intends to increment the value associated with a given key in an array.  However, directly modifying the key itself within the function doesn't update the array outside the function's scope. Values, however, can be modified from outside the scope and will change the function's behavior, as seen in the provided code.
